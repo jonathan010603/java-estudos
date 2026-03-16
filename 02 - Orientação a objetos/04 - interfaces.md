@@ -98,7 +98,30 @@ class Servico {
 - **Herança múltipla** de classes não é permitida em Java (uma classe só pode herdar de uma classe).
 - Interfaces permitem herança múltipla: uma classe pode implementar várias interfaces.
 - O **problema do diamante** ocorre quando duas interfaces possuem métodos default com a mesma assinatura.  
-  O desenvolvedor precisa resolver o conflito implementando o método na classe.
+  O compilador dará um erro e o desenvolvedor é obrigado a resolver o conflito sobrescrevendo o método na classe.
+
+**Exemplo resolvendo o Problema do Diamante:**
+
+```java
+interface A {
+    default void mostrar() { System.out.println("A"); }
+}
+
+interface B {
+    default void mostrar() { System.out.println("B"); }
+}
+
+class C implements A, B {
+    // O compilador obriga a sobrescrita devido ao conflito do método mostrar()
+    @Override
+    public void mostrar() {
+        // Escolhendo explicitamente usar a implementação da interface A
+        A.super.mostrar(); 
+        
+        // Ou você poderia ignorar ambas e colocar uma lógica totalmente nova aqui
+    }
+}
+```
 
 ---
 
@@ -150,7 +173,12 @@ A interface `Comparable<T>` define um contrato para comparar objetos:
 class Pessoa implements Comparable<Pessoa> {
     private String nome;
 
+    // O construtor e getters foram omitidos por brevidade
+
     public int compareTo(Pessoa outra) {
+        // Retorno < 0: this vem antes de 'outra'
+        // Retorno = 0: são iguais na ordenação
+        // Retorno > 0: this vem depois de 'outra'
         return this.nome.compareTo(outra.nome);
     }
 }
