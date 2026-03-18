@@ -1,7 +1,5 @@
 # Manipulação de Strings em Java
 
-Java oferece diversas funções para manipular strings. Abaixo estão as principais, com exemplos:
-
 ## 1. `length()`
 Retorna o tamanho da string.
 
@@ -78,5 +76,3 @@ Verifica início ou fim da string.
 texto.startsWith("J"); // true
 texto.endsWith("a"); // true
 ```
-
-Essas funções são essenciais para manipular textos em Java.

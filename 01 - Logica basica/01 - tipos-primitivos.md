@@ -13,4 +13,59 @@ Java possui 8 tipos primitivos:
 | `char`  | Caractere Unicode de 16 bits    | `char c = 'A';`        |
 | `boolean`| Valores verdadeiro ou falso    | `boolean flag = true;` |
 
-Cada tipo primitivo é usado para representar valores simples e não possui métodos associados.
+# Type Casting
+
+Podemos converter um tipo de dado em outro.
+
+**1 - Widening Type Casting**
+
+Converter um tipo de dado menor para um maior, é um processo **automático** e seguro que acontece quando:
+
+- O tipo-alvo é maior que o tipo-fonte
+- Os dois tipos são compatíveis
+
+>byte -> short -> char -> int -> long -> float -> double 
+
+**Exemplo:**
+```java
+int teste = 2;
+double var = teste;
+// var = 2.0
+```
+
+---
+
+**2 - Narrowing Type Casting**
+
+O contrário do widening. Converter um tipo de dado maior para um menor.
+* Processo **manual**
+* Não é seguro, risco de perda de dados na conversão
+
+>double -> float -> long -> int -> char -> short -> byte
+
+**Exemplo:**
+```java
+double teste = 2.0;
+int var = (int) teste;
+// var = 2
+// Foi necessário explicitar a conversão com (int)
+// Processo não é automático como no widening type casting
+```
+
+---
+
+**3 - Int para String**
+
+```java
+int num = 50;
+String strNum = String.valueOf(num);
+```
+
+---
+
+**4 - String para Int**
+
+```java
+String str = "50";
+int num = Integer.parseInt(str);
+```

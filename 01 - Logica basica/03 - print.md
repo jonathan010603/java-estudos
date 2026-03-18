@@ -1,4 +1,4 @@
-# Como usar `System.out.println`, `System.out.print` e `System.out.printf` em Java
+# Print
 
 ## 1. `System.out.println`
 Imprime uma mensagem e pula para a próxima linha.
@@ -11,14 +11,16 @@ Imprime uma mensagem sem pular para a próxima linha.
 ```java
 System.out.print("Olá, ");
 System.out.print("mundo!");
+
+// "Olá, mundo!"
 ```
 
 ## 3. `System.out.printf`
-Permite imprimir mensagens formatadas, usando placeholders.
-No exemplo abaixo, irá imprimit o número indicado após a vírgula, formatado com apenas duas casas decimais
-Resultado: 10.12
+Permite imprimir mensagens formatadas.
+No exemplo abaixo, irá imprimit o número com apenas duas casas decimais:
 ```java
 System.out.printf("O valor é: %.2f", 10.12345);
+// 10.12
 ```
 
 **Resumo:**  
@@ -28,7 +30,7 @@ System.out.printf("O valor é: %.2f", 10.12345);
 
 ## Adicionando valores ao texto com marcadores `%` (ex: `printf`)
 
-Em Java, você pode inserir valores em uma string usando marcadores como `%d`, `%s`, `%f` dentro de métodos como `printf` ou `String.format`. Esses marcadores são substituídos pelos valores fornecidos.
+Você pode inserir valores em uma string usando marcadores como `%d`, `%s`, `%f` dentro de métodos como `printf` ou `String.format`. Esses marcadores são substituídos pelos valores fornecidos.
 
 **Exemplo com `printf`:**
 ```java
@@ -46,5 +48,3 @@ String resultado = String.format("Valor: %.2f", 3.14159);
 System.out.println(resultado); // Valor: 3.14
 ```
 - `%.2f`: formata o número decimal com 2 casas
-
-Esses marcadores facilitam a montagem de textos dinâmicos.

@@ -1,6 +1,4 @@
-# Funções em Java
-
-Em Java, funções são chamadas de **métodos**. Eles são blocos de código que realizam tarefas específicas e podem ser reutilizados.
+# Métodos em Java
 
 ## Estrutura de um Método
 
@@ -64,10 +62,3 @@ Para métodos não estáticos:
 Calculadora calc = new Calculadora();
 calc.imprimirResultado(resultado);
 ```
-
-## Resumo
-
-- Métodos organizam o código em Java.
-- Possuem modificadores, tipo de retorno, nome, argumentos e corpo.
-- Podem ser estáticos ou de instância.
-- Facilitam a reutilização e manutenção do código.

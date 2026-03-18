@@ -1,17 +1,22 @@
 # Declarando Variáveis em Java
 
-Em Java, para declarar uma variável, você precisa informar o tipo de dado, seguido do nome da variável. Exemplos:
+Você pode inicializar a variável em outra parte do códgo:
 
 ```java
-int idade;           // Variável inteira
-double salario;      // Variável de ponto flutuante
-char inicial;        // Variável de caractere
-boolean ativo;       // Variável booleana
-String nome;         // Variável de texto (string)
+int idade;
+double salario;
+char inicial;
+boolean ativo;
+String nome;
+
+idade = 25;
+salario = 3500.50;
+inicial = 'J';
+ativo = true;
+nome = "João";
 ```
 
-Você pode também inicializar a variável ao declará-la:
-
+ou já na declaração:
 ```java
 int idade = 25;
 double salario = 3500.50;

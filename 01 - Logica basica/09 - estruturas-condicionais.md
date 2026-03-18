@@ -1,7 +1,5 @@
 # Estruturas Condicionais em Java
 
-Estruturas condicionais permitem executar diferentes blocos de código dependendo de condições lógicas.
-
 ## `if`, `else if`, `else`
 
 ```java
@@ -17,8 +15,6 @@ if (idade < 18) {
 ```
 
 ## `switch`
-
-O `switch` é usado para múltiplas opções.
 
 ```java
 int dia = 3;
@@ -39,8 +35,6 @@ switch (dia) {
 ```
 
 ## Operador Ternário
-
-Forma compacta de condição.
 
 ```java
 int numero = 10;

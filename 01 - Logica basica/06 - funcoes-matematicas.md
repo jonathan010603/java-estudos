@@ -1,30 +1,28 @@
 # Funções Matemáticas em Java
 
-Java oferece várias funções matemáticas na classe `Math`. Aqui estão algumas das mais usadas:
-
 ## 1. `Math.sqrt(double a)`
-Calcula a raiz quadrada de um número.
+Raiz quadrada de um número.
 
 ```java
 double raiz = Math.sqrt(16); // resultado: 4.0
 ```
 
 ## 2. `Math.pow(double a, double b)`
-Calcula a potência de um número.
+Potência de um número.
 
 ```java
 double potencia = Math.pow(2, 3); // resultado: 8.0
 ```
 
 ## 3. `Math.abs(int a)`
-Retorna o valor absoluto (sem sinal).
+Retorna o valor absoluto (módulo).
 
 ```java
 int absoluto = Math.abs(-10); // resultado: 10
 ```
 
 ## 4. `Math.max(a, b)` e `Math.min(a, b)`
-Retorna o maior ou menor valor entre dois números.
+Maior ou menor valor entre dois números.
 
 ```java
 int maior = Math.max(5, 10); // resultado: 10
@@ -52,5 +50,3 @@ Gera um número aleatório entre 0.0 e 1.0.
 ```java
 double aleatorio = Math.random(); // exemplo: 0.54321
 ```
-
-Essas funções são úteis para cálculos matemáticos em Java.

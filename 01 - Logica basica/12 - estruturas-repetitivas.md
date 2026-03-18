@@ -1,7 +1,5 @@
 # Estruturas de Repetição em Java
 
-Em Java, estruturas de repetição permitem executar um bloco de código várias vezes. As principais são: `for`, `while` e `do-while`.
-
 ## 1. For
 
 Usado quando se sabe o número de repetições.

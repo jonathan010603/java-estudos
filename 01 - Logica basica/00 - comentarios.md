@@ -1,12 +1,6 @@
 # Comentários em Java
 
-Comentários são usados para explicar o código e facilitar a manutenção. Eles não são executados pelo compilador.
-
-## Tipos de comentários
-
 ### 1. Comentário de uma linha
-
-Use `//` para comentar uma linha.
 
 ```java
 // Este é um comentário de uma linha
@@ -14,8 +8,6 @@ int x = 10; // Comentário ao lado do código
 ```
 
 ### 2. Comentário de múltiplas linhas
-
-Use `/* ... */` para comentar várias linhas.
 
 ```java
 /*

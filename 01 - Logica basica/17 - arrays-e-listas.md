@@ -1,14 +1,9 @@
 # Arrays, Listas e Dictionaries: Conceitos e Manipulação
 
-Estruturas de dados como **arrays**, **listas** e **dictionaries** são fundamentais em praticamente qualquer linguagem de programação. Elas permitem armazenar e manipular múltiplos valores de forma organizada, facilitando o desenvolvimento de algoritmos e sistemas complexos.
-
-Além da estrutura em si, é importante compreender conceitos relacionados ao funcionamento interno dessas estruturas, como **vetores**, **tipos por valor e referência**, **gerenciamento de memória**, **garbage collector**, **escopo**, **boxing e unboxing**, entre outros.
-
----
-
 ## Arrays (Vetores)
 
-Um **array** (ou **vetor**) é uma estrutura de dados que armazena uma **sequência de elementos do mesmo tipo** em posições contíguas de memória. Cada elemento é acessado através de um **índice**, que geralmente começa em `0`.
+**array** (ou **vetor**) armazena elementos de **mesmo tipo** em **sequência**.
+São acessados através de um **índice**, que geralmente começa em `0`.
 
 **Exemplo em Java:**
 

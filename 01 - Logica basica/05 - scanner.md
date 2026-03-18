@@ -1,26 +1,31 @@
 # Scanner em Java
 
-O `Scanner` é uma classe da biblioteca `java.util` usada para ler dados de entrada, como texto digitado pelo usuário, arquivos ou strings. Ele facilita a leitura de diferentes tipos de dados (int, double, String, etc.) de diversas fontes.
+Usado para ler entrada, como texto digitado pelo usuário, arquivos ou strings. Facilita a leitura de diferentes tipos de dados (int, double, String, etc.) de diversas fontes.
 
 ## Como funciona
 
-1. **Importação**: É necessário importar a classe.
-    ```java
-    import java.util.Scanner;
-    ```
+```java
+import java.util.Scanner;
 
-2. **Criação do objeto**: Normalmente, o objeto é criado passando o fluxo de entrada desejado, como `System.in` para entrada pelo teclado.
-    ```java
-    Scanner scanner = new Scanner(System.in);
-    ```
+// Passamos o fluxo de entrada desejado
+// No caso, System.in
+Scanner scanner = new Scanner(System.in);
 
-3. **Leitura de dados**: O `Scanner` possui métodos para ler diferentes tipos de dados:
+System.out.print("Digite um número inteiro: ");
+
+int numero = scanner.nextInt();
+System.out.println("Você digitou: " + numero);
+
+scanner.close();
+```
+
+- O `Scanner` possui métodos para ler diferentes tipos de dados:
     - `nextInt()` para inteiros
     - `nextDouble()` para números decimais
     - `nextLine()` para linhas de texto
     - `next()` para palavras
 
-4. **Fechamento**: Após o uso, recomenda-se fechar o scanner para liberar recursos.
+- Após o uso, recomenda-se fechar o scanner para liberar recursos.
     ```java
     scanner.close();
     ```

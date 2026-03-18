@@ -1,9 +1,5 @@
 # Operadores Comparativos em Java
 
-Os operadores comparativos são usados para comparar valores e retornar um resultado booleano (`true` ou `false`). Eles são essenciais em estruturas de decisão como `if`, `while`, etc.
-
-## Principais Operadores
-
 | Operador | Significado           | Exemplo         |
 |----------|----------------------|-----------------|
 | `==`     | Igual a              | `a == b`        |
